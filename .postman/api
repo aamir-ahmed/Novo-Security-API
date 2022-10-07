@@ -4,7 +4,8 @@ id = adebdd6c-70c3-4805-8229-64d2ffb598b8
 
 [relations.collections]
 rootDirectory = postman/collections
-files[] = {"id":"23367411-7873cd92-7188-417a-8ef9-da97787c4018","path":"Novo.json","metaData":{}}
+files[] = {"id":"23367411-737422a5-01bd-4818-8b47-b74a313017d6","path":"NOVA Security Tests.json","metaData":{}}
+files[] = {"id":"23367411-7873cd92-7188-417a-8ef9-da97787c4018","path":"Novo Documentation.json","metaData":{}}
 
 [relations.collections.metaData]
 
