@@ -11,7 +11,7 @@ jobs:
         run: |
           curl -o- "https://dl-cli.pstmn.io/install/linux64.sh" | sh
       - name: Login to Postman CLI
-        run: postman login --with-api-key ${{ secrets.POSTMAN_API_KEY }}
+        run: postman login --with-api-key PMAK-634035cd275c18185657464f-ff4dfd15dd467414996c57a0357dd6b82f
       - name: Run API tests
         run: |
           postman collection run "${{ github.workspace }}/postman/collections/NOVA Security Tests.json" -e "23367411-58e810e5-3fb6-453b-a1ff-5cf8faccf24b" --integration-id "124509-${{ github.run_id }}"
