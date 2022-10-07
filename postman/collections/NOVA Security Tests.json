@@ -509,6 +509,7 @@
 				{
 					"listen": "test",
 					"script": {
+						"id": "921d080d-6e82-42c4-9545-c37eaee6a190",
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {",
 							"    pm.response.to.have.status(200);",
@@ -517,13 +518,9 @@
 							"pm.test(\"Expected number of networks\", function () {",
 							"    var jsonData = pm.response.json();",
 							"    pm.expect(jsonData.network.length).to.eql(3);",
-							"});",
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
 							"});"
 						],
-						"type": "text/javascript",
-						"id": "921d080d-6e82-42c4-9545-c37eaee6a190"
+						"type": "text/javascript"
 					}
 				}
 			],
