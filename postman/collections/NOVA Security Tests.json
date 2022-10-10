@@ -404,6 +404,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "89ef436f-b495-448b-a155-fa26b4c6d4c9",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -413,10 +414,12 @@
 									"    var jsonData = pm.response.json();",
 									"    pm.expect(jsonData.user.name).to.eql(\"George Costanza\");",
 									"});",
-									""
+									"",
+									"pm.test(\"Status code is 401\", function () {",
+									"    pm.response.to.have.status(401);",
+									"});"
 								],
-								"type": "text/javascript",
-								"id": "89ef436f-b495-448b-a155-fa26b4c6d4c9"
+								"type": "text/javascript"
 							}
 						}
 					],
